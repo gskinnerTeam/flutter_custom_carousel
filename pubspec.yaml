@@ -1,5 +1,5 @@
 name: flutter_custom_carousel
-description: A widget for creating fully custom, animated scrollable lists. It manages all of the tricky logic surrounding scroll interactions and physics, and leaves the visual presentation of items up to you.
+description: A widget for creating fully custom, animated scrollable lists. It manages all the tricky scrolling logic and leaves the visual presentation up to you.
 version: 0.1.0
 repository: https://github.com/gskinnerTeam/flutter_custom_carousel
 issue_tracker: https://github.com/gskinnerTeam/flutter_custom_carousel/issues
