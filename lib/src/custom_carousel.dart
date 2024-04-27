@@ -44,6 +44,7 @@ class CustomCarousel extends StatefulWidget {
     this.scrollDirection = Axis.vertical,
     this.reverse = false,
     this.controller,
+    this.dense = false,
     this.physics,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -197,6 +198,9 @@ class CustomCarousel extends StatefulWidget {
   /// If `true`, the view will scroll infinitely in both directions, looping
   /// the list of items.
   final bool loop;
+
+  /// If `true`, the carousel will take the minimum height needed by its children.
+  final bool dense;
 
   @override
   State<CustomCarousel> createState() => _CustomCarouselState();
@@ -407,7 +411,7 @@ class _CustomCarouselState extends State<CustomCarousel> {
     }
 
     return Stack(
-      fit: StackFit.expand,
+      fit: widget.dense ? StackFit.loose : StackFit.expand,
       children: display,
     );
   }
